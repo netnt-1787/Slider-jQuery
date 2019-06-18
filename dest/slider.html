@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Slider jQuery</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center my-4">Demo Slider jQuery</h2>
+      <div class="code-example">
+        <div class="demo">
+          <div class="slider-carousel" data-pagi="true" data-navi="true">
+            <div class="slider-stage">
+              <div class="slider-stage__item active slide-0"><img src="images/slide1.jpg" alt="image slider" /></div>
+              <div class="slider-stage__item slide-1"><img src="images/slide2.jpg" alt="image slider" /></div>
+              <div class="slider-stage__item slide-2"><img src="images/slide3.jpg" alt="image slider" /></div>
+              <div class="slider-stage__item slide-3"><img src="images/slide4.jpg" alt="image slider" /></div>
+            </div>
+          </div>
+        </div>
+        <pre><code> $( '.slider-carousel' ).slider_plugin({
+    pagination : true,
+    navigation : true
+  });</code></pre>
+      </div>
+      <div class="code-example">
+        <div class="demo">
+          <div class="slider-carousel" data-pagi="false" data-navi="true" data-slideDelay="3000">
+            <div class="slider-stage">
+              <div class="slider-stage__item active slide-0"><img src="images/slide1.jpg" alt="image slider" /></div>
+              <div class="slider-stage__item slide-1"><img src="images/slide2.jpg" alt="image slider" /></div>
+              <div class="slider-stage__item slide-2"><img src="images/slide3.jpg" alt="image slider" /></div>
+              <div class="slider-stage__item slide-3"><img src="images/slide4.jpg" alt="image slider" /></div>
+            </div>
+          </div>
+        </div>
+        <pre><code> $( '.slider-carousel ).slider_plugin({
+    pagination : false,
+    navigation : true,
+    autoSlideDelay : 3000
+  });</code></pre>
+      </div>
+      <div class="code-example">
+        <div class="demo">
+          <div class="slider-carousel" data-pagi="true" data-navi="false" data-autoSlide="false">
+            <div class="slider-stage">
+              <div class="slider-stage__item active slide-0"><img src="images/slide1.jpg" alt="image slider" /></div>
+              <div class="slider-stage__item slide-1"><img src="images/slide2.jpg" alt="image slider" /></div>
+              <div class="slider-stage__item slide-2"><img src="images/slide3.jpg" alt="image slider" /></div>
+              <div class="slider-stage__item slide-3"><img src="images/slide4.jpg" alt="image slider" /></div>
+            </div>
+          </div>
+        </div>
+        <pre><code> $( '.slider-carousel' ).slider_plugin({
+    pagination : true,
+    navigation : false,
+    autoSlide : false
+  });</code></pre>
+      </div>
+      <div class="code-example">
+        <div class="demo">
+          <div class="slider-carousel" data-pagi="false" data-navi="false" data-slideDelay="1500">
+            <div class="slider-stage">
+              <div class="slider-stage__item active slide-0"><img src="images/slide1.jpg" alt="image slider" /></div>
+              <div class="slider-stage__item slide-1"><img src="images/slide2.jpg" alt="image slider" /></div>
+              <div class="slider-stage__item slide-2"><img src="images/slide3.jpg" alt="image slider" /></div>
+              <div class="slider-stage__item slide-3"><img src="images/slide4.jpg" alt="image slider" /></div>
+            </div>
+          </div>
+        </div>
+        <pre><code> $( '.slider-carousel' ).slider_plugin({
+    pagination : false,
+    navigation : false,
+    autoSlideDelay: 1500
+  });</code></pre>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
