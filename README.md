@@ -43,6 +43,7 @@ Plugin được tạo sẳn và tất nhiên là cấu trúc html cũng cần tu
       Your Content
     </div>
   </div>
+</div>
 ```
 
 ### Thiết lập gọi sử dụng Plugin
